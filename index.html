@@ -9,7 +9,10 @@
   </head>
   <body class="font-sans overflow-x-hidden">
     <section class="bg-white h-screen flex flex-col items-center" id="home">
-      <header id="navbar" class="w-full z-10 mx-4 pt-4 fixed top-0 backdrop-blur-md">
+      <header
+        id="navbar"
+        class="w-full z-10 mx-4 pt-4 fixed top-0 backdrop-blur-md"
+      >
         <div
           class="flex h-full items-center justify-between max-w-5xl mx-auto p-1"
         >
@@ -106,35 +109,132 @@
           >
             <div class="flex justify-center mb-4">
               <h2 class="font-medium text-gray-600">Para ti</h2>
-              <img class="w-8" src="img/icons8-tulipán-64.png" alt="">
+              <img class="w-8" src="img/icons8-tulipán-64.png" alt="" />
             </div>
             <p class="font-normal text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
               officiis tempora et aspernatur voluptatum harum minima eum numquam
               animi possimus. Non eaque a nostrum facere sequi vitae tempore
-              minima at.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              officiis tempora et aspernatur voluptatum harum minima eum numquam
-              animi possimus. Non eaque a nostrum facere sequi vitae tempore
-              minima at.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              officiis tempora et aspernatur voluptatum harum minima eum numquam
-              animi possimus. Non eaque a nostrum facere sequi vitae tempore
-              minima at.
+              minima at. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Excepturi officiis tempora et aspernatur voluptatum harum
+              minima eum numquam animi possimus. Non eaque a nostrum facere
+              sequi vitae tempore minima at. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Excepturi officiis tempora et
+              aspernatur voluptatum harum minima eum numquam animi possimus. Non
+              eaque a nostrum facere sequi vitae tempore minima at.
             </p>
           </div>
         </div>
       </div>
     </section>
     <!-- ================= GALERIA ================= -->
-    <section class=" w-100 h-screen flex justify-center items-center" id="galeria">
-        <div class="  w-4/6 h-3/4 m-auto grid grid-cols-2 gap-12">
-            <div class="bg-white shadow-custom-box flex justify-center items-center rounded-3xl"><img class="object-contain h-1/2 w-1/2" src="img/icons8-anillo-100.png" alt=""></div>
-            <div class="bg-white shadow-custom-box flex justify-center items-center rounded-3xl" ><img class="object-contain h-3/4 w-1/2" src="img/Diseño sin título (2).png" alt=""></div>
-            <div class="bg-white shadow-custom-box flex justify-center items-center rounded-3xl" ><img class="object-contain h-1/2 w-1/2" src="img/icons8-tulipán-64.png" alt=""></div>
-            <div class="bg-white shadow-custom-box flex justify-center items-center rounded-3xl" ><img class="object-contain h-1/2 w-1/2" src="img/icons8-web-100.png" alt=""></div>
+    <section
+      class="w-100 h-screen flex justify-center items-center"
+      id="galeria"
+    >
+      <div
+        class="w-4/6 h-3/4 m-auto grid grid-cols-2 grid-rows-2 gap-12 relative"
+      >
+        <!-- Elemento 1 -->
+        <div
+          class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all hover:z-20"
+        >
+          <img
+            class="object-contain h-1/2 w-1/2 transition-all group-hover:w-1/4"
+            src="img/icons8-anillo-100.png"
+            alt=""
+          />
+          <div
+            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+          >
+            <h2 class="text-2xl font-bold">Texto del Elemento 1</h2>
+            <p class="text-lg">Descripción adicional.</p>
+          </div>
         </div>
+
+        <!-- Elemento 2 -->
+        <div
+          class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all duration-1000 hover:z-20"
+        >
+          <img
+            class="object-contain h-3/4 w-1/2 transition-all group-hover:w-1/4"
+            src="img/Diseño sin título (2).png"
+            alt=""
+          />
+          <div
+            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+          >
+            <h2 class="text-2xl font-bold">Texto del Elemento 2</h2>
+            <p class="text-lg">Descripción adicional.</p>
+          </div>
+        </div>
+
+        <!-- Elemento 3 -->
+        <div
+          class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all duration-1000 hover:z-20"
+        >
+          <img
+            class="object-contain h-1/2 w-1/2 transition-all group-hover:w-1/4"
+            src="img/icons8-tulipán-64.png"
+            alt=""
+          />
+          <div
+            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+          >
+            <h2 class="text-2xl font-bold">Texto del Elemento 3</h2>
+            <p class="text-lg">Descripción adicional.</p>
+          </div>
+        </div>
+
+        <!-- Elemento 4 -->
+        <div
+          class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all duration-1000 hover:z-20"
+        >
+          <img
+            class="object-contain h-1/2 w-1/2 transition-all group-hover:w-1/4"
+            src="img/icons8-web-100.png"
+            alt=""
+          />
+          <div
+            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+          >
+            <h2 class="text-2xl font-bold">Texto del Elemento 4</h2>
+            <p class="text-lg">Descripción adicional.</p>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- =================== SOBRE NOSOTROS ================ -->
+    <section
+      class="w-100 h-screen flex justify-center items-center"
+      id="sobre_nosotros"
+    >
+      <div class=" max-w-5xl h-3/4 flex mt-10">
+        <div class="bg-white rounded-3xl mr-2 shadow-custom-box">
+          <p class="p-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            excepturi consequatur quae sequi molestias facilis aperiam assumenda
+            eligendi nostrum officiis vel praesentium neque in nihil, aliquam
+            voluptatum necessitatibus vitae suscipit.
+          </p>
+        </div>
+        <div class="bg-white ml-2 rounded-3xl shadow-custom-box">
+          <p class="p-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            enim at. Officiis, perferendis quos repudiandae dolorem obcaecati
+            asperiores fugiat reprehenderit? Provident voluptas quod nemo autem
+            consequatur odio cupiditate aliquam nam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ================ FOOTER ============================= -->
+     <footer class="w-100 h-40 bg-footer-texture opacity-95 flex justify-center items-center shadow-custom-box  rounded-t-full mt-6">
+      <div class="w-20">
+        <img src="img/Group 29 (2).png" alt="">
+      </div>
+     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
