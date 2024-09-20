@@ -6,12 +6,38 @@
     <title>Tulip Love</title>
     <link rel="stylesheet" href="output.css" />
     <link rel="icon" type="image/png" href="img/icons8-emoji-tulipán-48.png" />
+    <style>
+      
+
+      #dias{
+        animation: scale 2s ease-in-out infinite;
+      }
+
+      @keyframes scale {
+        0%{
+          scale: 1;
+        }
+        50%{
+          scale: 1.10;
+        }
+        100%{
+          scale:1;
+        }
+ 
+      }
+
+      .card{
+        padding-left: 10px;
+        padding-right: 15px;
+      }
+      
+    </style>
   </head>
   <body class="font-sans overflow-x-hidden">
-    <section class="bg-white h-screen flex flex-col items-center" id="home">
+    <section class="bg-white h-screen w-full flex flex-col items-center" id="home">
       <header
         id="navbar"
-        class="w-full z-10 mx-4 pt-4 fixed top-0 backdrop-blur-md"
+        class="w-full z-10 mx-4 pt-4 fixed top-0 backdrop-blur-md "
       >
         <div
           class="flex h-full items-center justify-between max-w-5xl mx-auto p-1"
@@ -52,12 +78,12 @@
                 <a href="#sobre_nosotros">Sobre nosotros</a>
               </li>
             </ul>
-            <div class="relative">
-              <h2 class="font-bold tracking-wide text-lg mb-0 pb-3">
+            <div class="relative" id="dias">
+              <h2 class="font-bold tracking-wide text-lg mb-0 pb-3 ">
                 <span class="counter" id="counter"></span>
               </h2>
               <h3
-                class="absolute font-light pl-1 mt-0 pt-0 top-5 text-sm"
+                class="absolute font-light pl-1 mt-0 pt-0 top-5 text-sm "
                 style="letter-spacing: 0.2rem"
               >
                 DIAS
@@ -67,7 +93,7 @@
         </div>
       </header>
       <!-- =========== CONTENIDO =================== -->
-      <div class="w-100 h-5/6 flex justify-end items-center max-w-5xl mt-20">
+      <div class="w-100 h-5/6 flex justify-end items-center max-w-5xl mt-20 md:flex-col">
         <div class="w-1/2 p-5">
           <div class="flex flex-col">
             <h2
@@ -105,23 +131,22 @@
         </div>
         <div class="w-2/3 h-lvh p-10 pt-20">
           <div
-            class="w-8/12 bg-white ml-10 h-5/6 rounded-3xl p-10 shadow-custom-box"
+            class="w-8/12 bg-white ml-10  rounded-3xl p-10 shadow-custom-box"
           >
             <div class="flex justify-center mb-4">
               <h2 class="font-medium text-gray-600">Para ti</h2>
               <img class="w-8" src="img/icons8-tulipán-64.png" alt="" />
             </div>
             <p class="font-normal text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              officiis tempora et aspernatur voluptatum harum minima eum numquam
-              animi possimus. Non eaque a nostrum facere sequi vitae tempore
-              minima at. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Excepturi officiis tempora et aspernatur voluptatum harum
-              minima eum numquam animi possimus. Non eaque a nostrum facere
-              sequi vitae tempore minima at. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Excepturi officiis tempora et
-              aspernatur voluptatum harum minima eum numquam animi possimus. Non
-              eaque a nostrum facere sequi vitae tempore minima at.
+              Hoy en este 21 de Setiembre, te quiero dar este pequeño pero significativo detalle,
+              no son flores amarillas como tal, lo se jaja, pero es una representación simbolica 
+              en algo que se hacer bien y en lo que me gusta hacer. Un tulipan amarillo es el 
+              regalo perfecto, para que recuerdes que cada petalo es un recordatorio de lo afortunado que soy
+              de tenerte, de que me ames, de tener una vida contigo y que todos los dias me haces
+              muy feliz. Te amo más de lo que mis palabras pueden decir, y siento que este detalle es muestra de ello,
+              no me odies por hacerte una paginita web jaja, pero este es un reflejo de todo lo que siento por ti, de todo
+              lo que te amo. Gracias por permitirme y darme la oportunidad de amarte y formar parte de ti, sabes que para mi, tu y yo 
+              somos una mini familia, y que se complementará, cuando tengamos a nuestros niños. Te amo mucho mi niña preciosa❤️‍🩹
             </p>
           </div>
         </div>
@@ -129,7 +154,7 @@
     </section>
     <!-- ================= GALERIA ================= -->
     <section
-      class="w-100 h-screen flex justify-center items-center"
+      class="h-screen flex justify-center items-center "
       id="galeria"
     >
       <div
@@ -137,7 +162,7 @@
       >
         <!-- Elemento 1 -->
         <div
-          class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all hover:z-20"
+          class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all duration-1000 hover:z-20"
         >
           <img
             class="object-contain h-1/2 w-1/2 transition-all group-hover:w-1/4"
@@ -145,10 +170,14 @@
             alt=""
           />
           <div
-            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+            class=" card hidden group-hover:flex flex-col justify-center  items-start transition-all duration-1000 px-8 "
           >
-            <h2 class="text-2xl font-bold">Texto del Elemento 1</h2>
-            <p class="text-lg">Descripción adicional.</p>
+            <h2 class="text-xl font-bold">El anillito❤️‍🩹</h2>
+            <p class=" text-md ">
+              Amo mucho este momento, aun recuerdo cuando te entregue el anillito❤️‍🩹  
+              y te pedi, fui un poco timido, chi jaja, pero amo mucho ese momento,
+              mucho más cuando me diste el besito jaja❤️‍🩹
+            </p>
           </div>
         </div>
 
@@ -162,10 +191,16 @@
             alt=""
           />
           <div
-            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+            class="card hidden group-hover:flex flex-col justify-center items-start  transition-all"
           >
-            <h2 class="text-2xl font-bold">Texto del Elemento 2</h2>
-            <p class="text-lg">Descripción adicional.</p>
+            <h2 class="text-xl font-bold">Los peluchitos❤️‍🩹</h2>
+            <p class=" text-md">
+              Es bonito regalarte peluchitos o ese tipo de detalles
+              porque siento que tienes un pedacito de mi mas cerquita de ti❤️‍🩹. 
+              Con el llaverito siempre me tendras presente, amo jaja❤️‍🩹.
+              Nunca te dejare de dar peluchitos mi amorcito❤️‍🩹
+              
+            </p>
           </div>
         </div>
 
@@ -179,10 +214,14 @@
             alt=""
           />
           <div
-            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+            class="card hidden group-hover:flex flex-col justify-center items-start  transition-all"
           >
-            <h2 class="text-2xl font-bold">Texto del Elemento 3</h2>
-            <p class="text-lg">Descripción adicional.</p>
+            <h2 class="text-xl font-bold">Las flores ❤️‍🩹</h2>
+            <p class="text-md">Son un muy bonito, y es mas bonito hacerte las flores 
+              mi corazón, se siente bonito, especial, y las flores son un detalle importante
+              que he tenido contigo bebé, hasta que se pueda dar la oportunidad de regalarte 
+              florecitas de verdad jaja❤️‍🩹.
+            </p>
           </div>
         </div>
 
@@ -191,15 +230,21 @@
           class="group bg-white shadow-custom-box flex justify-center items-center rounded-3xl relative transition-all duration-1000 hover:z-20"
         >
           <img
-            class="object-contain h-1/2 w-1/2 transition-all group-hover:w-1/4"
+            class="object-contain  h-1/2 w-1/2 transition-all group-hover:w-1/4"
             src="img/icons8-web-100.png"
             alt=""
           />
           <div
-            class="hidden group-hover:flex flex-col justify-center items-start pl-8 transition-all"
+            class="card hidden group-hover:flex flex-col justify-center items-start transition-all"
           >
-            <h2 class="text-2xl font-bold">Texto del Elemento 4</h2>
-            <p class="text-lg">Descripción adicional.</p>
+         
+            <h2 class="text-xl font-bold">Las web's❤️‍🩹</h2>
+            <p class="text-md">Sabes que ño es la primera que te hago, y aun
+              tengo presente la vez que te hice el programita en java jaja, ame hacerlo
+              fue muy bonito, esta es una de las formas en la que te demuestro mi amor.
+               Espero te gusten enserio mi amor jaja❤️‍🩹
+            </p>
+         
           </div>
         </div>
       </div>
@@ -209,21 +254,31 @@
       class="w-100 h-screen flex justify-center items-center"
       id="sobre_nosotros"
     >
-      <div class=" max-w-5xl h-3/4 flex mt-10">
+      <div class=" max-w-5xl h-3/4 grid grid-cols-2 gap-10 mt-10">
         <div class="bg-white rounded-3xl mr-2 shadow-custom-box">
           <p class="p-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            excepturi consequatur quae sequi molestias facilis aperiam assumenda
-            eligendi nostrum officiis vel praesentium neque in nihil, aliquam
-            voluptatum necessitatibus vitae suscipit.
+           Siendo sincero, soy muy feliz a tu lado, eso es indiscutible jaja, quisiera en verdad que 
+           nuestra relación mejore como nosotros queremos y ansiamos. En verdad me parece increible el 
+           tiempo que ya llevamos juntos, sin contar los años de amistad que tenemos aunque nunca dejamos
+           de ser amigos. Me gusta esta relación porque, ambos confiamos el uno en el otro, y sabemos, 
+           porque en realidad lo sabemos que estaremos tu para mi como yo para ti para apoyarnos siempre amor, para darnos 
+           alegria en momentos felices, para darnos consuelo en momentos triste, para darnos calma en momentos dificiles,
+           la confianza en el pasar de los años, se ha vuelto crucial mi amor, y me gusta que la tengamos en su 
+           maxima expresión. Aun recuerdo cuando te conocí, eras totalmente preciosa y lo sigues siendo, es una de las razones por 
+           la cual estoy totalmente enamorado contigo, la conexion que tuvimos fue tan natural y una quimica desde el primer mensaje jaja❤️‍🩹. 
+           Pienso en que, nosotros estamos destinados a estar juntos, eres el amor de mi vida y se que yo el tuyo❤️‍🩹.
           </p>
         </div>
         <div class="bg-white ml-2 rounded-3xl shadow-custom-box">
           <p class="p-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-            enim at. Officiis, perferendis quos repudiandae dolorem obcaecati
-            asperiores fugiat reprehenderit? Provident voluptas quod nemo autem
-            consequatur odio cupiditate aliquam nam.
+            Hemos aprendiendo a convivir, aprender las cosas del otro, aprender a escuchar las historias, anecdotas o problemas tu de mi
+            como yo de ti mi amor, me gusta ese lazo que hemos formado y que aun lo seguimos fortaleciendo, somos tan felices y nos sentimos agusto 
+            el uno con el otro, ya sea verte de lejitos, estar sentados en algunas escaleras, o estar acostados abrazados, esa conexion que tenemos tanto como emocional, 
+            fisico o en la intimidad. Hemos pasado muchas cosas juntos, aunque anhelo que pasen muchas cosas más, tener muchas mas citas bonitas, romanticas
+            que podamos disfrutar los dos como la pareja que somos❤️‍🩹. Algo que tambien quiero que sepas, es que yo siempre estaré para ti, amo ser tu novio, tu futuro esposo, 
+            el futuro padre de tus hijos, como tambien ser tu amigo, o mejor amigo obvi jaja, ser tu psicolgo, ser tu ingenierito que te soluciona los problemas jaja,
+            ser tu amante para esas escapadas fugaces jaja. Me gusta que me tengas la confianza para ser todo eso y debes saber que nunca te defraudaré. Amo la relación que tenemos
+            y lo unico que se es que estoy feliz y que quiero seguir contigo fortaleciendola. Te amo demasiado❤️‍🩹.
           </p>
         </div>
       </div>
